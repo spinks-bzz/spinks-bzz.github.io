@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta NAME="robots" CONTENT="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="icon" type="image/x-icon" href="https://x47base.xyz/assets/x47.png">
+
+    <script src="/script.js"></script>
+
+    <title>John Doe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="leftPart">
+                <div class="Name">
+                    <img src="./images/Main.jpg" alt="" draggable="false" />
+                    <span><a href="/">John Doe</a></span>
+                </div>
+            </div>
+            <div class="rightPart">
+                <a href="#home" class="headButton">Infos</a>
+                <a href="#hobbys" class="headButton">Hobbys</a>
+                <a href="#more" class="headButton">Mehr</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="home" class="home">
+                <div class="person">
+
+                    <div class="pPart information">
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>John Doe</td>
+                            </tr>
+                            <tr>
+                                <td>Alter</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Standort</td>
+                                <td>Zürich, Schweiz</td>
+                            </tr>
+                            <tr>
+                                <td>Telefonnummer</td>
+                                <td>+41 00 000 00 00</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>dummy_mail@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pPart pImage">
+                        <img src="./images/Main.jpg" alt="" draggable="false" />
+                    </div>
+                </div>
+            </section>
+            <section id="hobbys" class="hobbys">
+                <h2 class="title">Hobbys</h2>
+                <div class="hMain">
+                    <div class="hobby">
+                        <h3>Badminton</h3>
+                        <p>
+                            Ich bin seit 2022 im Badminton Club Dübendorf, welcher an 2 Standorten spielt.
+                            Ich spiele regulär freitagabends von 19.00 Uhr bis 20.30. Badminton macht mir
+                            Spass, weil es eine einfache Sportart ist, aber es kann auch anstrengend sein,
+                            wenn man gegen gute Gegner spielt.
+                        </p>
+                    </div>
+                    <div class="hobby">
+                        <h3>Programmieren</h3>
+                        <p>
+                            Seit knapp über 4 Jahren programmiere ich in meiner Freizeit. Ich habe über die
+                            Jahre hinweg mehr als sieben Programmiersprachen gelernt und habe diese
+                            regelmäßig für verschiedene Projekte verwendet. Unter den Programmiersprachen
+                            sind Python, Javascript, CSharp, Lua, HTML, CSS und MySQL.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="more" class="whyApp">
+                <h2 class="title">Wieso Softwareentwicklung?</h2>
+                <p class="appText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Dapibus ultrices in iaculis nunc sed
+                    augue lacus. Porttitor eget dolor morbi non arcu risus quis. Habitant morbi tristique
+                    senectus et netus et malesuada. Gravida arcu ac tortor dignissim convallis.
+                </p>
+            </section>
+            <section class="formularComments">
+                <h2>Hinterlassen Sie einen Kommentar</h2>
+                <div class="commentForm">
+                    <form name="CommentForm" onsubmit="event.preventDefault(); validateForm();">
+                        <label for="fname">Name:</label>
+                        <input placeholder="Name" type="text" id="fname" name="fname" />
+                        <label for="fcomment">Kommentar:</label>
+                        <textarea name="fcomment" placeholder="Schreiben Sie Ihren Kommentar" id="fcomment" cols="10"
+                            rows="6" maxlength="300"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <section id="comments" class="comments">
+                <div id="commentsHere">
+
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="fparts">
+            <a href="/impressum.txt">Impressum</a> <!-- Impressum -->
+            <a href="/disclaimer.txt">Haftungsausschluss</a> <!-- Disclaimer -->
+        </div>
+        <p>John Doe © 2023</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --accentHoverColor: #ff0000;
+
+    --mainColor: #fdfdfd;
+    --darkColor: #0c1618;
+    --lightDarkColor: #132326;
+    --fontColor: #7a7a7a;
+    --darkWhite: #e8eced;
+    --linkBlue: #057afc;
+    --red: #ff0000;
+    --blurple: #454fbf;
+    --darkGrey: #333;
+    --green: rgb(22, 174, 22);
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    color: var(--fontColor);
+    font-family: "Poppins", sans-serif;
+    
+    max-width: 100%;
+    
+    justify-content: center;
+    
+    align-items: center;
+}
+
+/* HEADER & NAV */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    gap: 500px;
+}
+
+nav .leftPart .Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+nav .leftPart .Name a{
+    color: var(--darkColor);
+    font-weight: 500;
+    padding: 5px;
+}
+
+nav .leftPart .Name img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+nav .rightPart {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .rightPart .headButton {
+    gap: 7px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav .rightPart .headButton:hover {
+    color: var(--blurple);
+    transition: all 250ms;
+}
+
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+main h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+main .home .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.person .pPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    transition: all 250ms;
+}
+
+.person .pImage img{
+    border-radius: 4.5%;
+    height: 256px;
+    width: 256px;
+}
+
+
+.person .information td {
+    gap: 7px;
+    padding: .175rem;
+}
+
+main .hobbys {
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin-top: 50px;
+}
+
+main .hobbys .hobby {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hobbys .hobby p {
+    width: 300px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main .hobbys .hMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hMain .hobby {
+    width: 350px;
+    max-width: 350px;
+}
+
+
+main .whyApp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1024px;
+
+}
+
+.whyApp .appText {
+    width: 800px;
+    text-align: center;
+}
+
+/* Comment Section */
+
+.formularComments {
+    position: relative;
+    max-width: 1024px;
+}
+
+.formularComments .commentForm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.commentForm input,
+.commentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    color: #777;
+}
+
+.commentForm textarea {
+    resize: none;
+}
+
+.comments {
+    max-width: 1024px;
+}
+
+.comments #commentsHere {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin-top: 50px;
+    flex-direction: row;
+}
+
+.comment {
+    min-width: 200px;
+    max-width: 250px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    gap: 7px;
+    
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.4);
+    
+    border-radius: 5%;
+}
+
+.comment p {
+    margin: 0;
+}
+
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: var(--darkColor);
+}
+
+footer p {
+    font-weight: 300;
+    text-align: center;
+}
+
+footer .fparts {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+footer .fparts a {
+    color: var(--mainColor);
+    text-decoration: none;
+    gap: 7px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+footer .fparts a:hover {
+    color: var(--blurple);
+    transition: all 250ms;
+}
+
